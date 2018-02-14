@@ -23,6 +23,10 @@ class NodoPila {
 }
 
 public class RPN {
+	
+	private String commando;
+	private NodoPila arriba;
+	
 	public void pushPila(double nuevo_dato) {
 		NodoPila nuevo_nodo = new NodoPila(nuevo_dato, arriba);
 		arriba = nuevo_nodo;
@@ -97,8 +101,7 @@ public class RPN {
 			return val;
 	}
 	
-	private String commando;
-	private NodoPila arriba;
+	
 }
 
 
