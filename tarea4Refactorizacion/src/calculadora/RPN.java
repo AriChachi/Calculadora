@@ -8,12 +8,21 @@ los operadores en notación RPN seria: 4 5 * 7 2 / - 3 % (pues no podemos poner l
 Se debe reorganizar este código usando al menos tres de las reglas
 vistas en clase.
 */
+/**
+ * 
+ * @author Arancha 
+ *
+ */
+
+
 
 
 class NodoPila {
-	
+
+
 	public NodoPila abajo;
 	public double dato;
+	
 	
 	public NodoPila(double dato, NodoPila abajo) {
 		this.dato = dato;
@@ -22,8 +31,9 @@ class NodoPila {
 	
 }
 
-public class RPN {
+public class RPN {	
 	
+
 	private String commando;
 	private NodoPila arriba;
 	
